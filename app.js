@@ -3,6 +3,11 @@ const express = require('express');
 // Create an Express app
 const app = express();
 
+app.get('/', (req, res) => {
+  // Retrieve the food parameter from the URL
+ res.send("the frontend is running too ")
+});
+
 // Define the GET route for retrieving recipes
 app.get('/recipe/:food', (req, res) => {
   // Retrieve the food parameter from the URL
