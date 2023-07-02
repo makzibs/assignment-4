@@ -25,6 +25,7 @@ app.get('/recipe/:food', (req, res) => {
   // Send the recipe as a JSON response
   //res.send(recipe);
   res.render('index', { recipe });
+  res.send(recipe);
 });
 
 // Start the server

@@ -3,12 +3,12 @@ html
   head
     title Recipe Page
   body
-    h1 Recipe: #{recipe.name}
-    h2 Instructions:
+    h1 #{recipe.name}
+    h2 Ingredients
     ul
-      each instruction in recipe.instructions
-        li= instruction
-    h2 Ingredients:
+      each ingredients in recipe.ingredients
+        li= ingredients 
+    h2 Instructions
     ul
-      each ingredient in recipe.ingredients
-        li= ingredient
+      each instructions  in recipe.instructions 
+        li= instructions 
