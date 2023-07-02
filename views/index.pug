@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title Recipe Page
+  body
+    h1 Recipe: #{recipe.name}
+    h2 Instructions:
+    ul
+      each instruction in recipe.instructions
+        li= instruction
+    h2 Ingredients:
+    ul
+      each ingredient in recipe.ingredients
+        li= ingredient

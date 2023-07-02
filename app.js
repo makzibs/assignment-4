@@ -3,6 +3,8 @@ const express = require('express');
 // Create an Express app
 const app = express();
 
+app.set('view engine', 'pug');
+
 app.get('/', (req, res) => {
   // Retrieve the food parameter from the URL
  res.send("the frontend is running too ")
@@ -21,7 +23,8 @@ app.get('/recipe/:food', (req, res) => {
   };
 
   // Send the recipe as a JSON response
-  res.send(recipe);
+  //res.send(recipe);
+  res.render('index', { recipe });
 });
 
 // Start the server
